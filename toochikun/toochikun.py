@@ -3,6 +3,7 @@ from pathlib import Path
 import requests
 
 
+
 class LineToochiKun:
     def __init__(self, token: str):
         self._token = token
@@ -27,8 +28,11 @@ class LineToochiKun:
                             files=files)
         return res
 
-    def send_sticker(self, report: str, sticker_package_id: int, sticker_id: int):
+    def send_sticker(self, report: str, sticker):
         message = report
+        sticker_package_id = sticker.__class__.ID.value
+        sticker_id = sticker.value
+        print(sticker_package_id, sticker_id)
         payload = {
             'message': message,
             'stickerPackageId': sticker_package_id,

@@ -1,8 +1,11 @@
-from toochikun.toochikun import LineToochiKun
+from sticker import CherryCoco
+
 
 import datetime
 import numpy
 import matplotlib.pyplot as plt
+
+from toochikun.toochikun import LineToochiKun
 
 
 def main():
@@ -11,12 +14,17 @@ def main():
     # line.send_sticker()
 
     now = datetime.datetime.now()
-    plt.plot(numpy.random.randn(1000))
-    plt.savefig("data/img.png")
-    line.send_image(
+    # plt.plot(numpy.random.randn(1000))
+    # plt.savefig("data/img.png")
+    # line.send_image(
+    #     report=str(now),
+    #     image_path="data/img.png"
+    # )
+    res = line.send_sticker(
         report=str(now),
-        image_path="data/img.png"
+        sticker=CherryCoco.merry_christmas
     )
+    print(res)
 
 
 if __name__ == "__main__":
