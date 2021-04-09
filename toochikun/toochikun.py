@@ -32,7 +32,6 @@ class LineToochiKun:
         message = report
         sticker_package_id = sticker.__class__.ID.value
         sticker_id = sticker.value
-        print(sticker_package_id, sticker_id)
         payload = {
             'message': message,
             'stickerPackageId': sticker_package_id,
