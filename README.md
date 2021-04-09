@@ -1,7 +1,7 @@
 # LINE Toochi-Kun for LTK: LINE for notifying the progress of the training of AI
 This is still my small-personal utility :)
 
-![image](https://user-images.githubusercontent.com/1684732/113171908-e62c5180-9282-11eb-9007-23fecfd56503.png)
+![S__20668421](https://user-images.githubusercontent.com/1684732/114170227-937f2380-996d-11eb-83fe-7b77a6cfcbf6.jpg)
 
 ## How to use
 1. Get access token of LINE notify from https://notify-bot.line.me/my/
