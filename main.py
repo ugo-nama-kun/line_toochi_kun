@@ -5,7 +5,7 @@ import datetime
 import numpy
 import matplotlib.pyplot as plt
 
-from toochikun.toochikun import LineToochiKun
+from ltk.ltk import LineToochiKun
 
 
 def main():
